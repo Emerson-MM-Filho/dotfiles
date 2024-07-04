@@ -20,5 +20,10 @@ alias personal="cd $PERSONAL_REPOS"
 alias dotfiles="cd $DOTFILES"
 alias bashrc="code $DOTFILES/.bashrc"
 
-# Commands
 alias updt_bashrc="cp $DOTFILES/.bashrc $HOME && source $HOME/.bashrc && echo 'Updated .bashrc \n(source file: $DOTFILES/.bashrc)'"
+
+# Pyenv
+# https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
