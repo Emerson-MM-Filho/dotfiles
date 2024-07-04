@@ -11,6 +11,8 @@ export SCRIPTS_DIR="${DOTFILES}/scripts"
 # Professional Directories
 export WISECUT_REPOS="${REPOS}/wisecut"
 
+export BACKUPS_DESTINATION="${HOME}/backups"
+
 # cd
 alias repos="cd $REPOS"
 alias wisecut="cd $WISECUT_REPOS"
